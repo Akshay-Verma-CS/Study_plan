@@ -1,24 +1,31 @@
+# Author: Akshay Verma
+# GitHub: https://github.com/Akshay-Verma-CS
+# Date of Creation: January 21, 2024
+
+from typing import Any
 class Node:
 
     def __init__(self,data):
-        self.data = data
-        self.next = None
+        self.data: Any = data
+        self.next: Node | None = None
 
 
 class LinkedList:
 
-    def __init__(self):
-        self.head = None
+    _head: Node | None
 
-    def getRearNode(self):
-        if self.head == None: return self.head
-        pointer: Node = self.head
+    def __init__(self) -> None:
+        self._head: Node | None = None
+
+    def getRearNode(self) -> Node:
+        if self._head == None: return self._head
+        pointer: Node = self._head
         while pointer.next != None:
             pointer = pointer.next
         return pointer
     
-    def searchVal(self,val):
-        pointer:Node = self.head
+    def searchVal(self,val) -> Node:
+        pointer:Node = self._head
         while pointer.data != val:
             # check if we have reached the end of linkedList and still not found val
             if pointer.next == None:
@@ -26,20 +33,20 @@ class LinkedList:
             pointer = pointer.next
         return pointer
 
-    def insertAtFront(self,data):
+    def insertAtFront(self,data) -> None:
         newNode: Node = Node(data)
-        newNode.next = self.head
-        self.head = newNode
+        newNode.next = self._head
+        self._head = newNode
 
-    def insertAtRear(self,data):
+    def insertAtRear(self,data) -> None:
         newNode: Node = Node(data)
         rearNode: Node = self.getRearNode()
         if rearNode == None:
-            self.head = newNode
+            self._head = newNode
             return
         rearNode.next = newNode
     
-    def insertAfterVal(self,data,val):
+    def insertAfterVal(self,data,val) -> None:
         newNode: Node = Node(data)
         pointer: Node | None = self.searchVal(val)
         if pointer == None:
@@ -48,37 +55,37 @@ class LinkedList:
         newNode.next = pointer.next
         pointer.next = newNode
 
-    def popFront(self):
-        if self.head == None:
+    def popFront(self) -> Any:
+        if self._head == None:
             print("empty linkedList, nothing to pop")
-        val = self.head.data
-        self.head = self.head.next
+        val = self._head.data
+        self._head = self._head.next
         return val
     
-    def popRear(self):
-        if self.head == None:
+    def popRear(self) -> Any:
+        if self._head == None:
             print("empty linkedList, nothing to pop")
-        pointer: Node = self.head
+        pointer: Node = self._head
         while pointer.next != None:
             previousNode: Node = pointer
             pointer = pointer.next
         previousNode.next = None
         return pointer.data
     
-    def delVal(self,val):
-        if self.head == None:
+    def delVal(self,val) -> None:
+        if self._head == None:
             print("empty linkedList, nothing to delete")
-        pointer: Node  = self.head
+        pointer: Node  = self._head
         while pointer.data != val:
             previousNode : Node = pointer
             pointer = pointer.next
         previousNode.next = pointer.next
 
-    def printList(self):
-        if self.head == None:
+    def printList(self) -> None:
+        if self._head == None:
             print("empty linkedList")
             return
-        pointer: Node = self.head
+        pointer: Node | None = self._head
         while True:
             print(pointer.data,end=" ")
             pointer = pointer.next
