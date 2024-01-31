@@ -1,22 +1,22 @@
 # My Sources to study
-    Here I have mentioned all the sources I use to study 
+Here I have mentioned all the sources I use to study 
 
 ## Websites
 
-    for interview preparation
-    [interview guide](https://www.techinterviewhandbook.org/software-engineering-interview-guide)
+for interview preparation
+[interview guide](https://www.techinterviewhandbook.org/software-engineering-interview-guide)
 
-    for DSA Implementations
-    [DSA Implementations](https://www.geeksforgeeks.org)
+for DSA Implementations
+[DSA Implementations](https://www.geeksforgeeks.org)
 
-    for coding practice
-    [coding platform](https://leetcode.com)
+for coding practice
+[coding platform](https://leetcode.com)
 
-    for project management
-    [github](https://github.com)
+for project management
+[github](https://github.com)
 
-    problemsets for algorithms
-    [cses problem set](https://cses.fi/problemset/)
+problemsets for algorithms
+[cses problem set](https://cses.fi/problemset/)
 
 ## Books
 
