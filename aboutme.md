@@ -1,6 +1,6 @@
 # About Me
 
-Hi, I am Akshay Verma, I am a software developer from India. 
+Hi, I am Akshay Verma, a software developer from India. 
 I specialize in backend development (Go,PHP,Python,NodeJS)
 
 ## My motivation for this repo
