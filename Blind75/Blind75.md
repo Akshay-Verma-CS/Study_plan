@@ -1,6 +1,6 @@
 # Blind75
 a curated list of LeetCode questions that you can practice to save time in your job hunt. You can easily find this on the internet.
-credit - yangshun 
+credit - yangshun Tay
 [github](https://github.com/yangshun)
 
 ## Array
