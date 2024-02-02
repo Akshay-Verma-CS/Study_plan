@@ -1,7 +1,14 @@
 # Recursion
 
 [Recursion Playlist by take u forward](https://www.youtube.com/playlist?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9)
+
 When a function calls itself until a specified condition is met.
+
+## Contents
+
+1. [terms](https://github.com/Akshay-Verma-CS/Study_plan/blob/main/CompetitiveCoding/DynamicProgramming/Recursion/recursion.md#terms)
+2. [Basic Recursion Problems](https://github.com/Akshay-Verma-CS/Study_plan/blob/main/CompetitiveCoding/DynamicProgramming/Recursion/recursion.md#basic-recursion-problems)
+3. [Parameterized and Functional Recursion](https://github.com/Akshay-Verma-CS/Study_plan/blob/main/CompetitiveCoding/DynamicProgramming/Recursion/recursion.md#parameterized-and-functional-recursion)
 
 ## terms
 
@@ -60,6 +67,8 @@ def getSumOfFirstNNumbers(counter: int,sum: int) -> int:
         print(sum)
     else:
         getSumOfFirstNNumbers(counter - 1, sum + counter)
+    n = int(input("Enter a number"))
+    getSumOfFirstNNumbers(n)
 ```
 
 Functional way
@@ -71,8 +80,6 @@ def getSumOfFirstNNumbers(n: int) -> int:
 n = int(input("Enter a number"))
 print(getSumOfFirstNNumbers(n))
 ```
-
-
 
 
 
