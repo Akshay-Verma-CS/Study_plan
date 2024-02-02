@@ -13,40 +13,40 @@ When a function calls itself until a specified condition is met.
 
 Problem 1 : Print name 5 times
 
-    ```python
-    def printName(name: string,count: int) -> None:
-        if count < 1:
-            return
-        print(name)
-        printName(name,count-1)
-    name: string = input("Enter name")
-    count: int = 5
-    printName(name,count)
-    ```
+```python
+def printName(name: string,count: int) -> None:
+    if count < 1:
+        return
+    print(name)
+    printName(name,count-1)
+name: string = input("Enter name")
+count: int = 5
+printName(name,count)
+```
 
 Problem 2 : Print linearly from 1 to N
 
-    ```python
-    def printNumbers(n: int) -> None:
-        if count < 1:
-            return
-        printNumbers(n-1)
-        print(n)
-    n: int = int(input())
-    printNumbers(10)
-    ```
+```python
+def printNumbers(n: int) -> None:
+    if count < 1:
+        return
+    printNumbers(n-1)
+    print(n)
+n: int = int(input())
+printNumbers(10)
+```
 
 Problem 3 : Print linearly from N to 1
 
-    ```python
-    def printNumbers(n: int) -> None:
-        print(n)
-        if count < 1:
-            return
-        printNumbers(n-1)
-    n: int = int(input())
-    printNumbers(n) 
-    ```
+```python
+def printNumbers(n: int) -> None:
+    print(n)
+    if count < 1:
+        return
+    printNumbers(n-1)
+n: int = int(input())
+printNumbers(n) 
+```
 
 ## Parameterized and Functional Recursion
 
@@ -54,23 +54,23 @@ Problem 1 : Sum of first N numbers
 
 Parameterised way
 
-    ```python
-    def getSumOfFirstNNumbers(counter: int,sum: int) -> int:
-        if counter < 1:
-            print(sum)
-        else:
-            getSumOfFirstNNumbers(counter - 1, sum + counter)
-    ```
+```python
+def getSumOfFirstNNumbers(counter: int,sum: int) -> int:
+    if counter < 1:
+        print(sum)
+    else:
+        getSumOfFirstNNumbers(counter - 1, sum + counter)
+```
 
 Functional way
 
-    ```python
-    def getSumOfFirstNNumbers(n: int) -> int:
-        if n > 0:
-            return n + getSumOfFirstNNumbers(n-1)
-    n = int(input("Enter a number"))
-    print(getSumOfFirstNNumbers(n))
-    ```
+```python
+def getSumOfFirstNNumbers(n: int) -> int:
+    if n > 0:
+        return n + getSumOfFirstNNumbers(n-1)
+n = int(input("Enter a number"))
+print(getSumOfFirstNNumbers(n))
+```
 
 
 
