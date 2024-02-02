@@ -1,4 +1,5 @@
 # Recursion
+
 [Recursion Playlist by take u forward](https://www.youtube.com/playlist?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9)
 When a function calls itself until a specified condition is met.
 
@@ -11,6 +12,7 @@ When a function calls itself until a specified condition is met.
 ## Basic Recursion Problems
 
 Problem 1 : Print name 5 times
+
     ```python
     def printName(name: string,count: int) -> None:
         if count < 1:
@@ -23,6 +25,7 @@ Problem 1 : Print name 5 times
     ```
 
 Problem 2 : Print linearly from 1 to N
+
     ```python
     def printNumbers(n: int) -> None:
         if count < 1:
@@ -34,6 +37,7 @@ Problem 2 : Print linearly from 1 to N
     ```
 
 Problem 3 : Print linearly from N to 1
+
     ```python
     def printNumbers(n: int) -> None:
         print(n)
@@ -49,6 +53,7 @@ Problem 3 : Print linearly from N to 1
 Problem 1 : Sum of first N numbers
 
 Parameterised way
+
     ```python
     def getSumOfFirstNNumbers(counter: int,sum: int) -> int:
         if counter < 1:
@@ -58,6 +63,7 @@ Parameterised way
     ```
 
 Functional way
+
     ```python
     def getSumOfFirstNNumbers(n: int) -> int:
         if n > 0:
