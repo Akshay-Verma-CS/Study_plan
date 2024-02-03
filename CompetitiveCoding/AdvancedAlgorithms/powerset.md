@@ -5,7 +5,7 @@ Reference from take U forward by Striver
 
 ## When To Use PowerSet
 
-1. When you want to generate all possible non contiguous subsequence
+When you want to generate all possible non contiguous subsequence
 
 Example if you have string s = "abc" then it's possible subsequnces are "","a","b","c","ab","ac","bc","abc"
 here n = 3 , therefore 2<sup>3</sup> is 8
@@ -47,13 +47,13 @@ then you start maaping it with the string and print values you will get the subs
 ## Main Algo
 
 If you now think about it and write a for loop to print all subsequences
-you will go from 0 to pow(2,n) - 1 where pow(2,n) is equivalent to (1 << n) - 1
+you will go from 0 to 2<sup>n</sup> - 1 where 2<sup>n</sup> is equivalent to (1 << n) - 1
 
 pseudo code
 
 ```text
 s = "anyString"
-for(num from 0 to pow(2,n)-1){
+for(num from 0 to 2<sup>n</sup>-1){
     subString=""
     for(i from 0 to n-1){
         if(num & (1 << i)){
@@ -64,6 +64,6 @@ for(num from 0 to pow(2,n)-1){
 }
 ```
 
-if we talk about the time complexity the outer loop runs for pow(2,n) and inner loop for n
-O(pow(2,n) * n)
+if we talk about the time complexity the outer loop runs for 2<sup>n</sup> and inner loop for n
+O(2<sup>n</sup> * n)
 And Space Complexity is O(1)
